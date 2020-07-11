@@ -1,4 +1,4 @@
-# Face-Mask-Detector /
+# Face-Mask-Detector 
 
-# Members :
+## Members :
  * Pulkit Dhingra
