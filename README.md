@@ -3,3 +3,4 @@
 ## Members :
  * Pulkit Dhingra
  * Prachi Porwal
+ * Purvika Panwar
