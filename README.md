@@ -33,13 +33,21 @@
 
 #### Used in train_mask_detector.py file
 **argparse**: Creates a simple CLI in python.
+
 **load_image**: Loads the image from the path.
+
 **img_to_array**: Converts a PIL image instance to np array, returns a 3D array (height, widht, channel) / channel can be placed at first axis or last.
+
 **preprocess_input**: Adequate your image to the format the model requires, creates a batch of image (samples, height, width, channel), scale the pixel intensities.
+
 **LabelBinarizer.fit_transform**: Performs one hot encoding (mapping of categorical data into numerical data) 
+
 **to_categorical**: Integer Encoding -> Binary vector (matrix)
+
 **train_test_split**: split the entire dataset(matrices) into 2 parts (train and test) 
+
 **ImageDataGenerator**: Accepts a batch of images and apply a series of random transformations to each image in batch. Replaces original batch with new. Performs Data Augmentation.
+
 ****
 
 
