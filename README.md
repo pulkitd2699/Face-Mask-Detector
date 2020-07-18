@@ -64,6 +64,10 @@
 
 ### Used in detect_mask_video.py file
 
+**blobFromImage**: Mean Subtraction, Scaling, Channel Swapping. 
+
+**setInput**: sets the new input value for the network, here blob
+
 ## Some terminology
 
 **Confusion Metrics**: Actual class on left, predicted class on top
@@ -77,6 +81,8 @@
 **F1 score**: Weighted average of Precision and Recall. 2 * (P * R) / (R + P).
 
 **Support**: No. of occurrences of each class in Y_true here testY.
+
+**blob**: N-dimensional array stored in C-contiguous fashion.
 
 ## Trends in graph
 
