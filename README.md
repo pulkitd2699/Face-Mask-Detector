@@ -5,13 +5,13 @@
  * Prachi Porwal
  * Purvika Panwar
 
-### Pipeline
+## Pipeline
 2 steps to be performed are - 
 
 **Training**: Loading dataset from disk, training a model on this dataset, saving face mask detector to disk.
 **Deployment**: Loading mask detector, performing face detection, categorizing each as with_mask or without_mask.
 
-### About files (directory)
+## About files (directory)
 
   * Dataset: 
   Contains 690 images under with_mask category and 689 images under without_mask category.
@@ -29,9 +29,9 @@
   
   * plot.png: 
   
-### Functions/Libraries/Classes and their use
+## Functions/Libraries/Classes and their use
 
-#### Used in train_mask_detector.py file
+### Used in train_mask_detector.py file
 **argparse**: Creates a simple CLI in python.
 
 **load_image**: Loads the image from the path.
@@ -62,13 +62,9 @@
 
 **H.history**: It holds the record of loss values and metrix values.
 
+### Used in detect_mask_video.py file
 
-#### Used in detect_mask_image.py file
-
-
-#### Used in detect_mask_video.py file
-
-### Some terminology
+## Some terminology
 
 **Confusion Metrics**: Actual class on left, predicted class on top
 
@@ -82,8 +78,25 @@
 
 **Support**: No. of occurrences of each class in Y_true here testY.
 
-#### Trends in graph
+## Trends in graph
 
 Validation loss curve is lower than training loss curve. 
 Reason1 : Regularization applied during training (droupout layer) and not during validation.
 Reason2 : Validation set may be easier than the training set.
+
+## How to run:
+
+First and foremost is to train the model, which is already done in this case.
+```
+python train_mask_detector.py --dataset dataset
+```
+
+For testing model against sample images
+```
+python detect_mask_image.py --image examples/example_01.png
+```
+
+Finally for live video testing
+```
+python detect_mask_video.py
+```
