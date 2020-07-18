@@ -9,6 +9,7 @@
 2 steps to be performed are - 
 
 **Training**: Loading dataset from disk, training a model on this dataset, saving face mask detector to disk.
+
 **Deployment**: Loading mask detector, performing face detection, categorizing each as with_mask or without_mask.
 
 ## About files (directory)
