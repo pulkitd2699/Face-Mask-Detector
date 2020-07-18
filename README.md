@@ -88,7 +88,9 @@
 ## Trends in graph
 
 Validation loss curve is lower than training loss curve. 
+
 Reason1 : Regularization applied during training (droupout layer) and not during validation.
+
 Reason2 : Validation set may be easier than the training set.
 
 ## How to run:
